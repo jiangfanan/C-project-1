@@ -13,41 +13,50 @@ struct node{
     int data;
     struct node *next;
 };
-void display(struct node *);
-int main(int argc,  char * argv[]) {
-    // insert code here...
+
+int main() {
     struct node *p;
     struct node *head;
-    head = p;
-    int m;
+    head =(struct node*)malloc (sizeof (struct node));
+    head->data=NULL;
+    head->next=NULL;//初始化头结点
     int i=0;
     int len=10;
     srand(time(NULL));
     for(i=0;i<len;i++){
         p= (struct node *)malloc(sizeof(struct node));
         p->data =rand()%100;
-        p=p->next;
-        }
+
+        p->next=head->next;
+        head->next=p;
+    }//利用头插法将数加入链表
     struct node *q;
+    struct node *r;
     p=head->next;
+    r=p;
     q=p->next;
+    while(p!=NULL){
     while(q!=NULL){
         if(q->data>p->data)
             q=q->next;
-        else
-        { int *m;
-            *m=q->data;
-        q->data=p->data;
-        p->data=*m;
-        q=q->next;
+        if(q->next<=p->next)
+        {
+            r=q;
+            q=q->next;
         }
-        
+    }
+     int m;
+     m=r->data;
+    r->data=p->data;
+    p->data=m;
+    p=p->next;
         
     }
-   p=head->next;
     while(p!=NULL){
-        printf("%d",p->data);
+        printf("%d\n",p->data);
+       p=p->next;
     }
-    return 0;
-}
+   return 0;
+    }
+
 
