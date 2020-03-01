@@ -12,7 +12,6 @@
 		2D0419BE2405F5E30011D14C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D0419BD2405F5E30011D14C /* main.c */; };
 		2D0419C9240758A20011D14C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D0419C8240758A20011D14C /* main.c */; };
 		2D0419D424078C1E0011D14C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D0419D324078C1E0011D14C /* main.c */; };
-		2D0419DF2407AA5C0011D14C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D0419DE2407AA5C0011D14C /* main.c */; };
 		2D0419EA2409E8230011D14C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D0419E92409E8230011D14C /* main.c */; };
 		2D0419F52409FE810011D14C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D0419F42409FE810011D14C /* main.c */; };
 		2D119946240A528D0055F7FB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D119945240A528D0055F7FB /* main.c */; };
@@ -114,7 +113,6 @@
 		2D0419D124078C1E0011D14C /* rand2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rand2; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0419D324078C1E0011D14C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		2D0419DC2407AA5C0011D14C /* rand2-2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "rand2-2"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D0419DE2407AA5C0011D14C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		2D0419E72409E8230011D14C /* 链表插入排序 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "链表插入排序"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0419E92409E8230011D14C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		2D0419F22409FE810011D14C /* 售货机2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "售货机2"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,7 +196,6 @@
 				2D0419BC2405F5E30011D14C /* 模拟售货机 */,
 				2D0419C7240758A20011D14C /* rand */,
 				2D0419D224078C1E0011D14C /* rand2 */,
-				2D0419DD2407AA5C0011D14C /* rand2-2 */,
 				2D0419E82409E8230011D14C /* 链表插入排序 */,
 				2D0419F32409FE810011D14C /* 售货机2 */,
 				2D119944240A528D0055F7FB /* 链表插入排序- */,
@@ -260,14 +257,6 @@
 				2D0419D324078C1E0011D14C /* main.c */,
 			);
 			path = rand2;
-			sourceTree = "<group>";
-		};
-		2D0419DD2407AA5C0011D14C /* rand2-2 */ = {
-			isa = PBXGroup;
-			children = (
-				2D0419DE2407AA5C0011D14C /* main.c */,
-			);
-			path = "rand2-2";
 			sourceTree = "<group>";
 		};
 		2D0419E82409E8230011D14C /* 链表插入排序 */ = {
@@ -559,7 +548,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D0419DF2407AA5C0011D14C /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
