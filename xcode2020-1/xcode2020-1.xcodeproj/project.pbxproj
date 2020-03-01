@@ -15,6 +15,7 @@
 		2D0419DF2407AA5C0011D14C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D0419DE2407AA5C0011D14C /* main.c */; };
 		2D0419EA2409E8230011D14C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D0419E92409E8230011D14C /* main.c */; };
 		2D0419F52409FE810011D14C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D0419F42409FE810011D14C /* main.c */; };
+		2D119946240A528D0055F7FB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D119945240A528D0055F7FB /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,6 +91,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		2D119941240A528D0055F7FB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +119,8 @@
 		2D0419E92409E8230011D14C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		2D0419F22409FE810011D14C /* 售货机2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "售货机2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0419F42409FE810011D14C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2D119943240A528D0055F7FB /* 链表插入排序- */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "链表插入排序-"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D119945240A528D0055F7FB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +180,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2D119940240A528D0055F7FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -175,13 +194,14 @@
 			isa = PBXGroup;
 			children = (
 				2D0419A12404C4EE0011D14C /* xcode2020-1 */,
-				2D0419B12404C6580011D14C /* xcode2020-2 */,
+				2D0419B12404C6580011D14C /* guss number */,
 				2D0419BC2405F5E30011D14C /* 模拟售货机 */,
 				2D0419C7240758A20011D14C /* rand */,
 				2D0419D224078C1E0011D14C /* rand2 */,
 				2D0419DD2407AA5C0011D14C /* rand2-2 */,
 				2D0419E82409E8230011D14C /* 链表插入排序 */,
 				2D0419F32409FE810011D14C /* 售货机2 */,
+				2D119944240A528D0055F7FB /* 链表插入排序- */,
 				2D0419A02404C4EE0011D14C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -197,6 +217,7 @@
 				2D0419DC2407AA5C0011D14C /* rand2-2 */,
 				2D0419E72409E8230011D14C /* 链表插入排序 */,
 				2D0419F22409FE810011D14C /* 售货机2 */,
+				2D119943240A528D0055F7FB /* 链表插入排序- */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,12 +230,12 @@
 			path = "xcode2020-1";
 			sourceTree = "<group>";
 		};
-		2D0419B12404C6580011D14C /* xcode2020-2 */ = {
+		2D0419B12404C6580011D14C /* guss number */ = {
 			isa = PBXGroup;
 			children = (
 				2D0419B22404C6580011D14C /* main.c */,
 			);
-			path = "xcode2020-2";
+			path = "guss number";
 			sourceTree = "<group>";
 		};
 		2D0419BC2405F5E30011D14C /* 模拟售货机 */ = {
@@ -263,6 +284,14 @@
 				2D0419F42409FE810011D14C /* main.c */,
 			);
 			path = "售货机2";
+			sourceTree = "<group>";
+		};
+		2D119944240A528D0055F7FB /* 链表插入排序- */ = {
+			isa = PBXGroup;
+			children = (
+				2D119945240A528D0055F7FB /* main.c */,
+			);
+			path = "链表插入排序-";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +433,23 @@
 			productReference = 2D0419F22409FE810011D14C /* 售货机2 */;
 			productType = "com.apple.product-type.tool";
 		};
+		2D119942240A528D0055F7FB /* 链表插入排序- */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D119947240A528D0055F7FB /* Build configuration list for PBXNativeTarget "链表插入排序-" */;
+			buildPhases = (
+				2D11993F240A528D0055F7FB /* Sources */,
+				2D119940240A528D0055F7FB /* Frameworks */,
+				2D119941240A528D0055F7FB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "链表插入排序-";
+			productName = "链表插入排序-";
+			productReference = 2D119943240A528D0055F7FB /* 链表插入排序- */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -437,6 +483,9 @@
 					2D0419F12409FE810011D14C = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
+					2D119942240A528D0055F7FB = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 2D04199A2404C4EE0011D14C /* Build configuration list for PBXProject "xcode2020-1" */;
@@ -460,6 +509,7 @@
 				2D0419DB2407AA5C0011D14C /* rand2-2 */,
 				2D0419E62409E8230011D14C /* 链表插入排序 */,
 				2D0419F12409FE810011D14C /* 售货机2 */,
+				2D119942240A528D0055F7FB /* 链表插入排序- */,
 			);
 		};
 /* End PBXProject section */
@@ -526,6 +576,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D0419F52409FE810011D14C /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D11993F240A528D0055F7FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D119946240A528D0055F7FB /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,6 +827,22 @@
 			};
 			name = Release;
 		};
+		2D119948240A528D0055F7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2D119949240A528D0055F7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -849,6 +923,15 @@
 			buildConfigurations = (
 				2D0419F62409FE810011D14C /* Debug */,
 				2D0419F72409FE810011D14C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D119947240A528D0055F7FB /* Build configuration list for PBXNativeTarget "链表插入排序-" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D119948240A528D0055F7FB /* Debug */,
+				2D119949240A528D0055F7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

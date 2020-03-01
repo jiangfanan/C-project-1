@@ -1,11 +1,10 @@
 //
 //  main.c
-//  链表插入排序
+//  链表插入排序-
 //
 //  Created by 蒋凡安 on 2020/2/29.
 //  Copyright © 2020 蒋凡安. All rights reserved.
 //
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -33,30 +32,17 @@ int main() {
     struct node *q;
     struct node *r;
     p=head->next;
-    r=p;//r用来寻找每一次遍历的最小值
     q=p->next;
-    while(p!=NULL){
-    while(q!=NULL){
-        if(q->data>p->data)
-            q=q->next;
-        if(q->next<=p->next)
+    for (int i=1;i<10;i++)
+        for(int j=0;j<i;j++)
         {
-            r=q;
-            q=q->next;
+            if(q->data>p->data)
+                q=q->next;
+            if(q->next<=p->next)
+            {
+                r=q;
+                q=q->next;
+            }
         }
-    }
-     int m;
-     m=r->data;
-    r->data=p->data;
-    p->data=m;
-    p=p->next;
-        
-    }
-    while(p!=NULL){
-        printf("%d\n",p->data);
-       p=p->next;
-    }
-   return 0;
-    }
-
-
+    return 0;
+}
